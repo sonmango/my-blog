@@ -1,50 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>3D Design Portfolio</title>
+
     <style>
         body {
+            margin: 40px;
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            background: #007bff;
+            background: #111;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
         }
-        .btn:hover {
-            background: #0056b3;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .project {
+            background: #1b1b1b;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            display: block;
+        }
+
+        .project-info {
+            padding: 18px;
+        }
+
+        .project-info h2 {
+            margin: 0 0 10px;
+            font-size: 22px;
+        }
+
+        .project-info p {
+            margin: 0;
+            color: #cccccc;
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        @media (max-width: 700px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to My GitHub Page!</h1>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
-        <a href="https://github.com/sonmango" class="btn" target="_blank">Visit My GitHub</a>
+
+<h1>My 3D Design Portfolio</h1>
+
+<div class="gallery">
+
+    <div class="project">
+        <img src="images/rover.png">
+
+        <div class="project-info">
+            <h2>Mars Rover</h2>
+            <p>
+                Fusion 360으로 설계한 로버 모델입니다.
+                센서와 모터의 배치를 고려하여 제작했습니다.
+            </p>
+        </div>
     </div>
+
+
+    <div class="project">
+        <img src="images/vortex.png">
+
+        <div class="project-info">
+            <h2>Vortex Experiment Device</h2>
+            <p>
+                유체 소용돌이 실험을 위해 설계한 장치입니다.
+                실험 조건에 맞게 구조를 조정했습니다.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="project">
+        <img src="images/holder.png">
+
+        <div class="project-info">
+            <h2>Motor Holder</h2>
+            <p>
+                모터를 안정적으로 고정하기 위한 부품입니다.
+                조립과 제작 편의성을 고려해 설계했습니다.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="project">
+        <img src="images/device.png">
+
+        <div class="project-info">
+            <h2>Experimental Device</h2>
+            <p>
+                과학 실험에 사용하기 위해 제작한 3D 구조물입니다.
+                Fusion 360을 이용해 모델링했습니다.
+            </p>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
