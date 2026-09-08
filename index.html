@@ -33,7 +33,15 @@
 
         .project img {
             width: 100%;
+            height: 400px;
+            object-fit: contain;
             display: block;
+            background: #111;
+        }
+
+        /* bag2 사진만 작게 */
+        .bag-img {
+            transform: scale(0.7);
         }
 
         .project-info {
@@ -72,7 +80,7 @@
     </div>
 
     <div class="project">
-        <img src="/my-blog/images/bag2.jpg">
+        <img class="bag-img" src="/my-blog/images/bag2.jpg">
         <div class="project-info">
             <p>디자인대회에 출품하였던 가방 슬라이딩 걸이</p>
         </div>
